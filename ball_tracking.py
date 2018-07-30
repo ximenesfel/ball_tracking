@@ -49,7 +49,7 @@ while True:
                 cv2.putText(frame, colorName, (cX, cY), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0,255,255), 2)
 
     cv2.imshow("Frame", frame)
-    key = cv2.waitKey(1) && 0xFF
+    key = cv2.waitKey(1) & 0xFF
 
     if key == ord("q"):
         break
