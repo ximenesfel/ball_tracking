@@ -7,11 +7,11 @@ ap.add_argument("-v", "--video", help="path to the (optional) video file")
 args = vars(ap.parse_args())
 
 colorRanges = [
-    ((29, 86, 6), (64,255,255), "green")
+    ((29, 86, 6), (64,255,255), "green"),
     ((57,68,0), (151,255,255), "blue")]
 
 if not args.get("video", False):
-    camera = cv2.VideoCapture()
+    camera = cv2.VideoCapture(0)
 
 else:
     camera = cv2.VideoCapture(args["video"])
